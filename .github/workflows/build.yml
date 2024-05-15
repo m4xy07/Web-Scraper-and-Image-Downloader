@@ -32,7 +32,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ github.event.head_commit.message }}
+          tag_name: Release
           release_name: ${{ github.event.head_commit.message }}
           body: |
            This is a simple web scraper application that extracts URLs from a given webpage and downloads all the images found on that page. The extracted URLs are saved to a file named index.txt, with image URLs separated from link URLs. It also has the option to scrape and download all images off a website and store it in a folder.
