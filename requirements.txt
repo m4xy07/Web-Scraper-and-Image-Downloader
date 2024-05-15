@@ -1,0 +1,3 @@
+pyinstaller
+bs4
+requests
